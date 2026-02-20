@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "divisions": "Business Divisions",
+    "pipeline": "Projects & Pipeline",
+    "insights": "Insights",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Connecting Health Beyond Borders.",
+    "subheadline": "C.H. Oriented builds connection-driven healthcare systems integrating medical expertise, global patient networks, and digital infrastructure.",
+    "ctaPrimary": "Partnership Inquiry",
+    "ctaSecondary": "Explore Our Network"
+  },
+  "about": {
+    "title": "About",
+    "philosophyTitle": "Our Philosophy",
+    "philosophyBody": "We believe healthcare should be connected, precise, and built for long-term value. C.H. Oriented operates at the intersection of clinical excellence, global patient networks, and structured innovation to deliver scalable medical systems beyond a single clinic model.",
+    "missionTitle": "Mission & Vision",
+    "missionBody": "Our mission is to build connection-driven healthcare infrastructure that integrates medical expertise, cross-border patient coordination, and digital tools. We aim to be a long-term platform company that enables structured, scalable health systems worldwide.",
+    "valuesTitle": "Core Values",
+    "valueConnection": "Connection",
+    "valuePrecision": "Precision",
+    "valueLongTerm": "Long-Term Value",
+    "valueInnovation": "Structured Innovation",
+    "founderTitle": "Founder Message",
+    "founderBody": "C.H. Oriented was founded on the conviction that healthcare infrastructure must be connection-driven and built to scale. We are not a single clinic—we are a platform company focused on integrating medical expertise, global patient networks, and digital systems to create lasting value for partners and patients alike."
+  },
+  "divisions": {
+    "title": "Business Divisions",
+    "subtitle": "Four core divisions driving connection-driven healthcare infrastructure.",
+    "learnMore": "Learn More",
+    "medicalPractice": {
+      "title": "Medical Practice Division",
+      "description": "Precision-driven surgical and regenerative services."
+    },
+    "globalPatient": {
+      "title": "Global Patient Network",
+      "description": "Cross-border patient integration and coordination systems."
+    },
+    "medicalDevice": {
+      "title": "Medical Device & OEM Development",
+      "description": "Clinically optimized device innovation and IP pipeline."
+    },
+    "digitalHealth": {
+      "title": "Digital Healthcare Infrastructure",
+      "description": "CRM, patient data systems, and scalable digital healthcare tools."
+    }
+  },
+  "pipeline": {
+    "title": "Projects & Pipeline",
+    "subtitle": "Long-term scalability and growth potential through structured initiatives.",
+    "patent": { "title": "Patent Development", "description": "Ongoing IP development and patent pipeline to protect and scale innovation." },
+    "rnd": { "title": "R&D Initiatives", "description": "Structured R&D programs aligned with clinical and digital healthcare goals." },
+    "partnerships": { "title": "Strategic Partnerships", "description": "Long-term partnerships with institutions and industry to expand reach and capability." },
+    "expansion": { "title": "Expansion Roadmap", "description": "Planned geographic and vertical expansion to build a global healthcare platform." }
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Our Services",
+    "lead": "C.H. Oriented delivers connection-driven healthcare through four core divisions: precision medical practice, global patient networks, medical device innovation, and digital infrastructure.",
+    "learnMore": "Learn more",
+    "ctaText": "Partner with us to integrate medical expertise, cross-border coordination, and scalable digital systems.",
+    "ctaPrimary": "Partnership inquiry",
+    "ctaSecondary": "Explore divisions"
+  },
+  "insights": {
+    "title": "Insights / Media",
+    "subtitle": "CMS-based blog. Categories optimized for SEO and discoverability.",
+    "industry": "Industry Insights",
+    "press": "Press Releases",
+    "trends": "Global Healthcare Trends",
+    "comingSoon": "Blog listing and CMS integration coming soon. Structure is ready for Supabase-backed content."
+  },
+  "contact": {
+    "title": "Contact / Partnership",
+    "subtitle": "For partnership and corporate inquiries.",
+    "corporateEmail": "Corporate email",
+    "office": "Office",
+    "social": "Social",
+    "socialPlaceholder": "Links can be added here (LinkedIn, etc.)",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company (optional)",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@company.com",
+    "companyPlaceholder": "Company name",
+    "messagePlaceholder": "Partnership or inquiry details",
+    "submit": "Submit inquiry",
+    "sending": "Sending…",
+    "sent": "Sent",
+    "tryAgain": "Try again",
+    "error": "Something went wrong. Please try again or email us directly."
+  },
+  "footer": {
+    "tagline": "Connecting Health Beyond Borders.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "language": "Language",
+    "copyright": "All rights reserved."
+  },
+  "divisionPage": {
+    "back": "Back to Business Divisions",
+    "notFound": "Division not found",
+    "expandNote": "Full division content and metrics can be added here. Page is ready for expansion."
+  },
+  "insightsPage": {
+    "back": "Insights",
+    "intro": "CMS-based blog. Categories: Industry Insights, Press Releases, Global Healthcare Trends. Structure is SEO-ready; connect Supabase (or your CMS) to list and render posts."
+  },
+  "locale": {
+    "en": "EN",
+    "ko": "한국어"
+  }
+}

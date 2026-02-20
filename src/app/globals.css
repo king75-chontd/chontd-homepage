@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+  /* Font stack */
+  --font-sans: "Inter", "Pretendard", "Noto Sans JP", "Noto Sans SC", "Noto Sans KR",
+    system-ui, -apple-system, sans-serif;
+
+  /* Layout – modern alignment & rhythm */
+  --content-max: 75rem;        /* 1200px */
+  --content-narrow: 42rem;    /* 672px, readable prose */
+  --section-padding-x: 1.5rem; /* 24px, sm: 1.5rem, lg: 2rem */
+  --section-padding-y: 5rem;  /* 80px sm, 96px md, 112px lg */
+  --grid-gap: 1.5rem;         /* 24px, lg: 2rem */
+  --card-radius: 0.75rem;     /* 12px */
+  --card-padding: 1.5rem;     /* sm: 1.5rem, md: 1.75rem */
+
+  /* C.H. Oriented – institutional dark theme */
+  --bg-primary: #0d1112;
+  --bg-elevated: #141c1e;
+  --bg-card: #1a2426;
+  --green-deep: #0f2e28;
+  --green-accent: #1a4d42;
+  --green-muted: #2d5a50;
+  --charcoal: #1e282a;
+  --border: #2a3638;
+  --text-primary: #f0f4f3;
+  --text-secondary: #9ca8a6;
+  --text-muted: #6b7876;
+  --accent: #2d7a6a;
+  --accent-hover: #3a9080;
+}
+
+/* Shared section container – aligns all content to same width */
+.section-container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--section-padding-x);
+  padding-right: var(--section-padding-x);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --section-padding-x: 2rem;
+    --section-padding-y: 7rem;
+    --grid-gap: 2rem;
+    --card-padding: 1.75rem;
+  }
+}
+
+/* Section header block – center-aligned */
+.section-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .section-header {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-header {
+    margin-bottom: 4rem;
+  }
+}
+
+.section-header .section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+@media (min-width: 640px) {
+  .section-header .section-title {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-header .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+.section-header .section-lead {
+  margin-top: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 640px) {
+  .section-header .section-lead {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Prose width for comfortable reading */
+.prose-width {
+  max-width: 65ch;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Subtle fade-in for sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-delay-1 { animation-delay: 0.1s; opacity: 0; }
+.animate-fade-in-delay-2 { animation-delay: 0.2s; opacity: 0; }
+.animate-fade-in-delay-3 { animation-delay: 0.3s; opacity: 0; }
+.animate-fade-in-delay-4 { animation-delay: 0.4s; opacity: 0; }
