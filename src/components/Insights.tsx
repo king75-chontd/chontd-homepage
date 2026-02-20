@@ -11,7 +11,7 @@ export default async function Insights() {
   const t = await getTranslations();
 
   return (
-    <section id="insights" className="border-t border-[var(--border)] bg-[var(--bg-elevated)] py-16 sm:py-20 md:py-24 lg:py-[7rem]">
+    <section id="insights" className="border-t border-[var(--border)] bg-[var(--bg-elevated)] py-20 sm:py-24 md:py-28 lg:py-[7.5rem]">
       <div className="section-container text-center">
         <header className="section-header">
           <h2 className="section-title">{t("insights.title")}</h2>
@@ -23,14 +23,14 @@ export default async function Insights() {
             <Link
               key={slug}
               href={`/insights?category=${slug}`}
-              className="rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-3.5 text-sm font-medium text-[var(--text-primary)] transition hover:border-[var(--green-muted)]"
+              className="rounded-full border border-[var(--border)] bg-[var(--bg-card)] px-5 py-3 text-sm font-medium text-[var(--text-primary)] transition-all hover:border-[rgba(11,15,20,0.18)] hover:shadow-[0_6px_20px_var(--shadow)]"
             >
               {t(key)}
             </Link>
           ))}
         </div>
 
-        <p className="mt-8 text-sm text-[var(--text-muted)] sm:mt-10">
+        <p className="mx-auto mt-10 max-w-[65ch] text-sm text-[var(--text-muted)] sm:mt-12">
           {t("insights.comingSoon")}
         </p>
       </div>

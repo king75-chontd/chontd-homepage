@@ -10,19 +10,19 @@ export default async function InsightsPage({ params }: Props) {
   const t = await getTranslations();
 
   return (
-    <div className="min-h-screen pt-24 pb-16 lg:pb-24">
-      <div className="section-container">
-        <div className="max-w-3xl">
+    <div className="min-h-screen bg-[var(--bg-primary)] pt-24 pb-16 lg:pb-24">
+      <div className="section-container text-center">
+        <div className="mx-auto max-w-[75ch]">
           <Link
             href="/#insights"
-            className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)]"
+            className="text-sm text-[var(--text-muted)] transition-colors hover:text-[var(--text-primary)]"
           >
             ← {t("insightsPage.back")}
           </Link>
           <h1 className="mt-6 section-title sm:mt-8">
             {t("insights.title")}
           </h1>
-          <p className="mt-4 text-[var(--text-secondary)] leading-relaxed sm:mt-5">
+          <p className="mt-4 text-[var(--text-secondary)] leading-[1.65] sm:mt-5 sm:leading-[1.7]">
             {t("insightsPage.intro")}
           </p>
         </div>

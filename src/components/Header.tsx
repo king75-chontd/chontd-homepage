@@ -18,7 +18,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/90 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--bg-primary)]/95 backdrop-blur-sm">
       <div className="section-container flex h-14 items-center justify-between gap-4 sm:h-16 md:gap-6">
         <Link
           href="/"
@@ -32,7 +32,7 @@ export default function Header() {
             <Link
               key={key}
               href={navHref(key)}
-              className="text-sm text-[var(--text-secondary)] transition hover:text-[var(--text-primary)]"
+              className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
             >
               {t(key)}
             </Link>
@@ -44,7 +44,7 @@ export default function Header() {
           <LocaleSwitcher />
           <button
             type="button"
-            className="flex flex-col gap-1.5 p-2"
+            className="flex flex-col gap-1.5 p-2 text-[var(--text-primary)]"
             onClick={() => setOpen((o) => !o)}
             aria-label="Toggle menu"
           >
@@ -56,13 +56,13 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-[var(--border)] bg-[var(--bg-elevated)] md:hidden">
+        <div className="border-t border-[var(--border)] bg-[var(--bg-primary)] md:hidden">
           <div className="section-container flex flex-col gap-1 py-4">
             {NAV_KEYS.map((key) => (
               <Link
                 key={key}
                 href={navHref(key)}
-                className="py-2.5 text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+                className="py-2.5 text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
                 onClick={() => setOpen(false)}
               >
                 {t(key)}

@@ -14,14 +14,14 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="flex items-center gap-1 rounded-md border border-[var(--border)] bg-[var(--bg-card)] p-0.5">
+    <div className="flex items-center gap-1 rounded-full border border-[var(--border)] bg-[var(--bg-card)] p-0.5">
       <button
         type="button"
         onClick={() => switchLocale("en")}
-        className={`rounded px-2 py-1 text-xs font-medium transition md:px-2.5 md:py-1.5 md:text-sm ${
+        className={`rounded-full px-2.5 py-1 text-xs font-medium transition-all md:px-3 md:py-1.5 md:text-sm ${
           locale === "en"
-            ? "bg-[var(--accent)] text-white"
-            : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+            ? "bg-[var(--text-primary)] text-white shadow-sm"
+            : "text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
         }`}
         aria-label="English"
       >
@@ -30,10 +30,10 @@ export default function LocaleSwitcher() {
       <button
         type="button"
         onClick={() => switchLocale("ko")}
-        className={`rounded px-2 py-1 text-xs font-medium transition md:px-2.5 md:py-1.5 md:text-sm ${
+        className={`rounded-full px-2.5 py-1 text-xs font-medium transition-all md:px-3 md:py-1.5 md:text-sm ${
           locale === "ko"
-            ? "bg-[var(--accent)] text-white"
-            : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+            ? "bg-[var(--text-primary)] text-white shadow-sm"
+            : "text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
         }`}
         aria-label="한국어"
       >

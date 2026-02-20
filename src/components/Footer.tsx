@@ -15,8 +15,8 @@ export default async function Footer() {
 
   return (
     <footer className="border-t border-[var(--border)] bg-[var(--bg-elevated)]">
-      <div className="section-container py-12 sm:py-14 lg:py-16">
-        <div className="grid gap-10 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+      <div className="section-container py-12 text-center sm:py-14 lg:py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div>
             <p className="text-lg font-semibold tracking-tight text-[var(--text-primary)]">
               C.H. Oriented
@@ -34,7 +34,7 @@ export default async function Footer() {
                 <li key={key}>
                   <Link
                     href={footerHref(key)}
-                    className="text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+                    className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
                   >
                     {tNav(key)}
                   </Link>

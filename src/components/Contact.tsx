@@ -29,14 +29,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="border-t border-[var(--border)] bg-[var(--bg-primary)] py-16 sm:py-20 md:py-24 lg:py-[7rem]">
+    <section id="contact" className="border-t border-[var(--border)] bg-[var(--bg-primary)] py-20 sm:py-24 md:py-28 lg:py-[7.5rem]">
       <div className="section-container text-center">
         <header className="section-header">
           <h2 className="section-title">{t("title")}</h2>
           <p className="section-lead">{t("subtitle")}</p>
         </header>
 
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-start">
+        <div className="mx-auto grid max-w-4xl gap-12 lg:grid-cols-2 lg:gap-16 lg:items-start">
           <div className="space-y-8 text-center">
             <div>
               <p className="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)]">
@@ -77,7 +77,7 @@ export default function Contact() {
                 name="name"
                 type="text"
                 required
-                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
+                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] transition-colors focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
                 placeholder={t("namePlaceholder")}
               />
             </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                 name="email"
                 type="email"
                 required
-                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
+                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] transition-colors focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
                 placeholder={t("emailPlaceholder")}
               />
             </div>
@@ -102,7 +102,7 @@ export default function Contact() {
                 id="company"
                 name="company"
                 type="text"
-                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
+                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] transition-colors focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
                 placeholder={t("companyPlaceholder")}
               />
             </div>
@@ -115,14 +115,14 @@ export default function Contact() {
                 name="message"
                 required
                 rows={4}
-                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
+                className="mt-1.5 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-4 py-3 text-[var(--text-primary)] placeholder-[var(--text-muted)] transition-colors focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
                 placeholder={t("messagePlaceholder")}
               />
             </div>
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full rounded-xl bg-[var(--accent)] py-3.5 text-sm font-medium text-white transition hover:bg-[var(--accent-hover)] disabled:opacity-50"
+              className="btn-primary w-full disabled:opacity-50"
             >
               {status === "sending"
                 ? t("sending")
@@ -133,7 +133,7 @@ export default function Contact() {
                     : t("submit")}
             </button>
             {status === "error" && (
-              <p className="text-sm text-red-400">
+              <p className="text-sm text-red-500">
                 {t("error")}
               </p>
             )}
