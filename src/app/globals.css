@@ -16,18 +16,19 @@
   --transition-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --transition-duration: 180ms;
 
-  /* Color system – neutral base, light theme */
-  --bg-primary: #ffffff;
-  --bg-elevated: #ffffff;
-  --bg-card: #ffffff;
-  --text-primary: #0b0f14;      /* Very dark, near-black */
-  --text-secondary: #1a2230;    /* Dark neutral */
-  --text-muted: #5b6678;        /* Soft gray */
-  --border: rgba(11, 15, 20, 0.10);  /* Thin, subtle */
-  --shadow: rgba(11, 15, 20, 0.06);   /* Subtle soft shadow */
-  --shadow-hover: rgba(11, 15, 20, 0.10);  /* Slightly stronger on hover */
-  --accent: #2d7a6a;           /* Restrained accent */
-  --accent-hover: #3a9080;
+  /* Color system – dark base, deep green / charcoal */
+  --bg-primary: #0a0f0d;
+  --bg-elevated: #111916;
+  --bg-card: #1a2420;
+  --text-primary: #f0f2f0;        /* Off-white */
+  --text-secondary: #b8c4be;      /* Light green-gray */
+  --text-muted: #6b7c72;          /* Dim green-gray */
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: rgba(0, 0, 0, 0.30);
+  --shadow-hover: rgba(0, 0, 0, 0.45);
+  --accent: #3ecfb4;              /* Bright teal for dark bg */
+  --accent-hover: #5ee8cc;
+  --bg-accent-subtle: rgba(62, 207, 180, 0.06);
 }
 
 @media (min-width: 1024px) {
@@ -135,7 +136,7 @@ body {
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 40px var(--shadow-hover);
-  border-color: rgba(11, 15, 20, 0.16);
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
 /* Button styles */
@@ -146,8 +147,8 @@ body {
   padding: 0.625rem 1.5rem;
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #ffffff;
-  background: var(--text-primary);
+  color: #0a0f0d;
+  background: var(--accent);
   border: none;
   border-radius: 999px;
   cursor: pointer;
@@ -180,7 +181,7 @@ body {
 .btn-secondary:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--shadow);
-  border-color: rgba(11, 15, 20, 0.18);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 /* Subtle fade-in for sections */
@@ -203,3 +204,39 @@ body {
 .animate-fade-in-delay-2 { animation-delay: 0.2s; opacity: 0; }
 .animate-fade-in-delay-3 { animation-delay: 0.3s; opacity: 0; }
 .animate-fade-in-delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+/* FAQ accordion */
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item summary {
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Kicker / eyebrow label */
+.section-kicker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+/* Scroll-triggered reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s var(--transition-ease),
+              transform 0.7s var(--transition-ease);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

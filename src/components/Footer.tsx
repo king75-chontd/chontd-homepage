@@ -58,7 +58,7 @@ export default async function Footer() {
               {t("language")}
             </p>
             <p className="mt-3 text-sm text-[var(--text-muted)]">
-              EN / KO
+              EN / KO / JP
             </p>
           </div>
         </div>

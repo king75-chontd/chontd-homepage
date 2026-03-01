@@ -91,5 +91,5 @@ export default async function ServicesPage({ params }: Props) {
 }
 
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "ko" }];
+  return [{ locale: "en" }, { locale: "ko" }, { locale: "ja" }];
 }

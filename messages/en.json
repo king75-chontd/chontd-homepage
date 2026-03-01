@@ -8,6 +8,7 @@
     "contact": "Contact"
   },
   "hero": {
+    "kicker": "Healthcare Infrastructure Platform",
     "headline": "Connecting Health Beyond Borders.",
     "subheadline": "C.H. Oriented builds connection-driven healthcare systems integrating medical expertise, global patient networks, and digital infrastructure.",
     "ctaPrimary": "Partnership Inquiry",
@@ -25,7 +26,15 @@
     "valueLongTerm": "Long-Term Value",
     "valueInnovation": "Structured Innovation",
     "founderTitle": "Founder Message",
-    "founderBody": "C.H. Oriented was founded on the conviction that healthcare infrastructure must be connection-driven and built to scale. We are not a single clinic—we are a platform company focused on integrating medical expertise, global patient networks, and digital systems to create lasting value for partners and patients alike."
+    "founderBody": "C.H. Oriented was founded on the conviction that healthcare infrastructure must be connection-driven and built to scale. We are not a single clinic—we are a platform company focused on integrating medical expertise, global patient networks, and digital systems to create lasting value for partners and patients alike.",
+    "metric1Label": "Countries",
+    "metric1Value": "5+",
+    "metric2Label": "Divisions",
+    "metric2Value": "4",
+    "metric3Label": "Focus Areas",
+    "metric3Value": "12+",
+    "metric4Label": "Years Building",
+    "metric4Value": "3+"
   },
   "divisions": {
     "title": "Business Divisions",
@@ -40,7 +49,7 @@
       "description": "Cross-border patient integration and coordination systems."
     },
     "medicalDevice": {
-      "title": "Medical Device & OEM Development",
+      "title": "Medical Device & Development",
       "description": "Clinically optimized device innovation and IP pipeline."
     },
     "digitalHealth": {
@@ -71,7 +80,30 @@
     "industry": "Industry Insights",
     "press": "Press Releases",
     "trends": "Global Healthcare Trends",
-    "comingSoon": "Blog listing and CMS integration coming soon. Structure is ready for Supabase-backed content."
+    "comingSoon": "Blog listing and CMS integration coming soon. Structure is ready for Supabase-backed content.",
+    "industryDesc": "Analysis and commentary on the evolving global healthcare landscape.",
+    "pressDesc": "Official announcements, milestones, and company updates.",
+    "trendsDesc": "Data-driven perspectives on cross-border healthcare innovation."
+  },
+  "ctaBanner": {
+    "headline": "Ready to build the future of healthcare?",
+    "body": "Partner with C.H. Oriented to integrate medical expertise, global networks, and scalable digital systems.",
+    "cta": "Partnership Inquiry"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What is C.H. Oriented?",
+    "a1": "C.H. Oriented is a healthcare infrastructure company focused on building structured, scalable, connection-oriented medical systems. We integrate clinical expertise, global patient networks, and digital tools to create lasting value beyond a single clinic model.",
+    "q2": "How is this different from a clinic?",
+    "a2": "Unlike a traditional clinic, C.H. Oriented operates as a platform company. We build the systems, networks, and infrastructure that enable multiple healthcare operations to scale — including cross-border patient coordination, medical device development, and digital health tools.",
+    "q3": "What partnership models are available?",
+    "a3": "We offer strategic partnerships across our four divisions: clinical collaboration, patient network integration, device co-development, and digital infrastructure licensing. Each model is tailored to the partner's goals and regional context.",
+    "q4": "Which countries do you operate in?",
+    "a4": "C.H. Oriented currently operates across 5+ countries with a focus on South Korea, Japan, and Southeast Asia. Our expansion roadmap includes additional markets in Asia-Pacific and beyond.",
+    "q5": "How does the Global Patient Network work?",
+    "a5": "Our Global Patient Network connects patients with specialized medical services across borders. We handle coordination, translation, logistics, and follow-up care through a structured system designed for seamless cross-border healthcare experiences.",
+    "q6": "How can I become a partner?",
+    "a6": "Submit a partnership inquiry through our contact form or email us at partnership@choriented.com. Our team will review your inquiry and schedule a consultation to explore alignment and collaboration opportunities."
   },
   "contact": {
     "title": "Contact / Partnership",
@@ -112,6 +144,7 @@
   },
   "locale": {
     "en": "EN",
-    "ko": "한국어"
+    "ko": "한국어",
+    "ja": "日本語"
   }
 }

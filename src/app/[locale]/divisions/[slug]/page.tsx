@@ -63,7 +63,7 @@ export default async function DivisionPage({
 }
 
 export function generateStaticParams() {
-  const locales = ["en", "ko"];
+  const locales = ["en", "ko", "ja"];
   return locales.flatMap((locale) =>
     Object.keys(SLUG_KEYS).map((slug) => ({ locale, slug }))
   );

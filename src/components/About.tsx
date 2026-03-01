@@ -31,6 +31,19 @@ export default async function About() {
           </div>
         </div>
 
+        <div className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4 lg:mt-20">
+          {(["metric1", "metric2", "metric3", "metric4"] as const).map((key) => (
+            <div key={key} className="text-center">
+              <p className="text-3xl font-bold tracking-tight text-[var(--accent)] sm:text-4xl">
+                {t(`${key}Value`)}
+              </p>
+              <p className="mt-1 text-sm text-[var(--text-muted)]">
+                {t(`${key}Label`)}
+              </p>
+            </div>
+          ))}
+        </div>
+
         <div className="mt-16 lg:mt-20">
           <h3 className="text-lg font-semibold tracking-tight text-[var(--text-primary)]">
             {t("valuesTitle")}
