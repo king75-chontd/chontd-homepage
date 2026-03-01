@@ -22,7 +22,7 @@ export default function Header() {
       <div className="section-container flex h-14 items-center justify-between gap-4 sm:h-16 md:gap-6">
         <Link
           href="/"
-          className="text-base font-semibold tracking-tight text-[var(--text-primary)] sm:text-lg"
+          className="gold-shimmer text-base font-semibold tracking-tight sm:text-lg"
         >
           C.H. Oriented
         </Link>

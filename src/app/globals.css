@@ -16,19 +16,19 @@
   --transition-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --transition-duration: 180ms;
 
-  /* Color system – dark base, deep green / charcoal */
-  --bg-primary: #0a0f0d;
-  --bg-elevated: #111916;
-  --bg-card: #1a2420;
-  --text-primary: #f0f2f0;        /* Off-white */
-  --text-secondary: #b8c4be;      /* Light green-gray */
-  --text-muted: #6b7c72;          /* Dim green-gray */
-  --border: rgba(255, 255, 255, 0.08);
-  --shadow: rgba(0, 0, 0, 0.30);
-  --shadow-hover: rgba(0, 0, 0, 0.45);
-  --accent: #3ecfb4;              /* Bright teal for dark bg */
-  --accent-hover: #5ee8cc;
-  --bg-accent-subtle: rgba(62, 207, 180, 0.06);
+  /* Color system – pure black base, orange accent */
+  --bg-primary: #0a0a0a;
+  --bg-elevated: #111111;
+  --bg-card: #1a1a1a;
+  --text-primary: #ffffff;           /* Pure white */
+  --text-secondary: #c0c0c0;        /* Light gray */
+  --text-muted: #707070;            /* Mid gray */
+  --border: rgba(255, 255, 255, 0.10);
+  --shadow: rgba(0, 0, 0, 0.40);
+  --shadow-hover: rgba(0, 0, 0, 0.55);
+  --accent: #e8752a;                /* Warm orange */
+  --accent-hover: #f5923e;
+  --bg-accent-subtle: rgba(232, 117, 42, 0.06);
 }
 
 @media (min-width: 1024px) {
@@ -147,7 +147,7 @@ body {
   padding: 0.625rem 1.5rem;
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #0a0f0d;
+  color: #0a0a0a;
   background: var(--accent);
   border: none;
   border-radius: 999px;
@@ -204,6 +204,28 @@ body {
 .animate-fade-in-delay-2 { animation-delay: 0.2s; opacity: 0; }
 .animate-fade-in-delay-3 { animation-delay: 0.3s; opacity: 0; }
 .animate-fade-in-delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+/* Gold shimmer animation for header logo */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #c9a84c 0%,
+    #f5e6a3 25%,
+    #dfc362 50%,
+    #f5e6a3 75%,
+    #c9a84c 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
 
 /* FAQ accordion */
 .faq-item {

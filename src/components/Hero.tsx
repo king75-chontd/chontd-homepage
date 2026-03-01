@@ -14,7 +14,7 @@ export default async function Hero() {
           <h1 className="animate-fade-in text-[clamp(2.125rem,3.2vw,3.375rem)] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--text-primary)]">
             {t("headline")}
           </h1>
-          <p className="animate-fade-in animate-fade-in-delay-1 mx-auto mt-6 max-w-[75ch] text-base leading-[1.65] text-[var(--text-secondary)] sm:mt-7 sm:text-[1.0625rem] sm:leading-[1.7]">
+          <p className="animate-fade-in animate-fade-in-delay-1 mx-auto mt-6 max-w-xl text-base leading-[1.65] text-[var(--text-secondary)] sm:mt-7 sm:max-w-2xl sm:text-[1.0625rem] sm:leading-[1.7]">
             {t("subheadline")}
           </p>
           <div className="animate-fade-in animate-fade-in-delay-2 mt-10 flex flex-wrap items-center justify-center gap-3 sm:mt-12 sm:gap-4">

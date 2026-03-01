@@ -11,7 +11,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#0a0f0d",
+  themeColor: "#0a0a0a",
 };
 
 export default function RootLayout({
@@ -42,7 +42,7 @@ export default function RootLayout({
           gtag('config', 'G-XXXXXXXXXX');
         ` }} /> */}
       </head>
-      <body className="antialiased bg-[#0a0f0d]">{children}</body>
+      <body className="antialiased bg-[#0a0a0a]">{children}</body>
     </html>
   );
 }
