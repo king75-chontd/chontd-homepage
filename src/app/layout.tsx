@@ -15,8 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "C.H. Oriented | Connecting Health Beyond Borders",
-    description:
-      "C.H. Oriented builds connection-driven healthcare systems integrating medical expertise, global patient networks, and digital infrastructure.",
+    description: "Global healthcare connection platform.",
     url: "https://chontd.com",
     siteName: "C.H. Oriented",
     images: [
@@ -32,8 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "C.H. Oriented | Connecting Health Beyond Borders",
-    description:
-      "C.H. Oriented builds connection-driven healthcare systems integrating medical expertise, global patient networks, and digital infrastructure.",
+    description: "Global healthcare connection platform.",
     images: ["https://chontd.com/og-image.png"],
   },
 };
